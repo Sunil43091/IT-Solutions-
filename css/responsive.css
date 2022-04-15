@@ -1,0 +1,146 @@
+@media (max-width:1199px){
+
+}
+@media (max-width:991px){
+
+}
+@media (max-width:767px){
+  .xxl-title {
+  	font-size: 70px;
+    text-align: center;
+  }
+  .md-title {
+  font-size: 30px;
+  text-align: center;
+}
+.btnSwiper {
+	text-align: center;
+}
+.flip-box {
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+}
+}
+@media (max-width:576px){
+  .xxl-title {
+	font-size: 40px;
+  text-align: center;
+}
+.styleform {
+	width: 543px;
+}
+.feature-box.style-four .feature-box-content {
+	padding: 10px;
+}
+.btnSwiper {
+	text-align: center;
+}
+
+.image-wrap {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.flip-box {
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+.infodiv h2 {
+	font-size: 25px;
+}
+.logoFoter img {
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+.styleform{
+	max-width: 300px;
+}
+}
+@media (max-width:410px){
+  .btnRead {
+  	font-size: 12px;
+  	padding: 15px 30px;
+}
+.btnGet {
+  font-size: 12px;
+  padding: 15px 30px;
+}
+@media (max-width:374px){
+  .xxl-title {
+  	font-size: 40px;
+    text-align: center;
+  }
+  .md-title {
+	font-size: 20px;
+  text-align: center;
+}
+.btnRead {
+	font-size: 12px;
+	padding: 15px 30px;
+}
+.btnGet {
+	font-size: 12px;
+	padding: 15px 30px;
+}
+.btnSwiper {
+	text-align: center;
+}
+.swiperCol .swiper {
+	width: 100%;
+	height: 500px;
+	z-index: 1;
+  cursor: pointer;
+}
+.solutions_text > span {
+	font-size: 12px;
+	letter-spacing: 0px;
+
+}
+.subhead h3 {
+	font-size: 20px;
+}
+.secvice_text h3 {
+	font-size: 20px;
+}
+.Features_text h3 {
+	font-size: 20px;
+}
+.logoFoter img {
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+.secvice_text h3 {
+	font-size: 25px;
+}
+.styleform{
+	max-width: 300px;
+}
+.heading {
+	font-size: 20px;
+}
+.testimonial4_slide p {
+	font-size: 14px;
+}
+.Team_MemberCOL_text h2 {
+	font-size: 20px;
+}
+.Team_MemberCOL_text span {
+	font-size: 14px;
+	font-weight: 700;
+	 letter-spacing: 0px; 
+
+}
+.form_text h1 {
+	font-size: 25px;
+}
+.Subscribetext h3 {
+	font-size: 19px;	
+	padding: 0px 0px 25px 0px;
+}
+}
