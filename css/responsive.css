@@ -60,6 +60,9 @@
 .styleform{
 	max-width: 300px;
 }
+.form-box input {
+	width: 200px;
+}
 }
 @media (max-width:410px){
   .btnRead {
@@ -78,6 +81,18 @@
   .md-title {
 	font-size: 20px;
   text-align: center;
+}
+.form-box button {
+	padding: 10px 9px;
+}
+.form-box input {
+	outline: none;
+	font-size: 12px;
+	border: none;
+	color: #000;
+	background-color: #fff;
+	padding: 10px 9px;
+	width: 197px;
 }
 .btnRead {
 	font-size: 12px;

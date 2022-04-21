@@ -51,6 +51,7 @@ var swiper = new Swiper(".firstsilderClass", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
     centeredSlides: true,
+    rewind: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -93,21 +94,29 @@ var swiper = new Swiper(".fourCOLImg", {
 
 
 
-var delay = 500;
-$(".progress-bar").each(function(i){
-    $(this).delay( delay*i ).animate( { width: $(this).attr('aria-valuenow') + '%' }, delay );
+// Once all content has been loaded, the function check if there is at least 1 container with class 'progress' and at least 1 child with 'data-progress' attribute inside the container
+window.onload = function () {
+  if (
+    document.querySelectorAll(".progress").length > 0 &&
+    document.querySelectorAll(".progress [data-progress]").length > 0
+  ) {
+    // Get all elements with 'data-progress' attribute and run the 'AnimateProgress' funcion with each one
+    document
+      .querySelectorAll(".progress [data-progress]")
+      .forEach((x) => AnimateProgress(x));
+  }
+};
 
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: delay,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now)+'%');
-        }
-    });
-});
-
+function AnimateProgress(el) {
+  // Get the element that came as parameter and add the class 'animated-progress' on it
+  el.className = "animate-progress";
+  // Set the attribute 'style' of this element with the custom attribute '--animate-progress' and the value of 'data-progress' as the width value
+  el.setAttribute(
+    "style",
+    `--animate-progress:${el.getAttribute("data-progress")}%;`
+  );
+  // After this the CSS make its magic
+}
 
 
 
